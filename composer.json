@@ -62,7 +62,8 @@
     "psr-4": {
       "Exdrals\\Shared\\": "src/Shared/src",
       "Exdrals\\Mailing\\": "src/Mailing/src/",
-      "Exdrals\\Token\\": "src/Token/src/"
+      "Exdrals\\Token\\": "src/Token/src/",
+      "Exdrals\\Core\\": "src/"
     }
   }
 }
