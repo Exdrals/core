@@ -8,19 +8,4 @@ use Exdrals\Shared\Handler\PingHandler;
 use Exdrals\Shared\Handler\SwaggerUIHandler;
 
 return static function (Application $app, MiddlewareFactory $factory, ContainerInterface $container): void {
-    $app->get(
-        path: '/api/ping[/]',
-        middleware: [
-            PingHandler::class,
-        ],
-        name: RouteIdent::PING->value
-    );
-
-    $app->get(
-        path: '/api[/]',
-        middleware: [
-            SwaggerUIHandler::class,
-        ],
-        name: RouteIdent::SWAGGER_UI->value
-    );
 };

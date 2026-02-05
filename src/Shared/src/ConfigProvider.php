@@ -30,7 +30,6 @@ class ConfigProvider
                 Middleware\ApiErrorHandlerMiddleware::class => ConfigAbstractFactory::class,
                 Middleware\RouteNotFoundMiddleware::class => ConfigAbstractFactory::class,
                 Shared\Infrastructure\Service\SlugService::class => InvokableFactory::class,
-                \Exdrals\Identity\Middleware\RequireLoginMiddleware::class => InvokableFactory::class,
                 Shared\Middleware\FluentTransactionMiddleware::class => ConfigAbstractFactory::class,
             ],
         ];

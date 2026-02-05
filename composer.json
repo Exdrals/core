@@ -70,7 +70,11 @@
   },
   "archive": {
     "exclude": [
-      ".gitignore"
+      ".gitignore",
+      "src/Shared/config",
+      "src/Shared/bin",
+      "src/Mailing/config",
+      "src/Token/config"
     ]
   }
 }
