@@ -19,9 +19,6 @@
       "laminas/laminas-component-installer": true,
       "pestphp/pest-plugin": true
     },
-    "platform": {
-      "php": "8.4.16"
-    },
     "sort-packages": true
   },
   "extra": {
@@ -36,7 +33,7 @@
     }
   },
   "require": {
-    "php": "~8.4.0",
+    "php": "^8.4.0",
     "ext-json": "*",
     "ext-openssl": "*",
     "ext-pdo": "*",
@@ -67,14 +64,5 @@
       "Exdrals\\Mailing\\": "src/Mailing/src/",
       "Exdrals\\Token\\": "src/Token/src/"
     }
-  },
-  "archive": {
-    "exclude": [
-      ".gitignore",
-      "src/Shared/config",
-      "src/Shared/bin",
-      "src/Mailing/config",
-      "src/Token/config"
-    ]
   }
 }
