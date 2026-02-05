@@ -1,5 +1,6 @@
 /.github/           export-ignore
 /src/Mailing/config export-ignore
 /src/Shared/config  export-ignore
+/src/Shared/bin     export-ignore
 /src/Token/config   export-ignore
 /.gitignore         export-ignore
