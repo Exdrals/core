@@ -1,0 +1,76 @@
+{
+  "name": "exdrals/core",
+  "description": "core library for personal projects",
+  "type": "library",
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "OpenSource"
+  ],
+  "homepage": "https://github.com/exdrals",
+  "support": {
+    "docs": "https://github.com/exdrals/core",
+    "issues": "https://github.com/exdrals/core/issues",
+    "source": "https://github.com/exdrals/core"
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/package-versions-deprecated": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "laminas/laminas-component-installer": true,
+      "pestphp/pest-plugin": true
+    },
+    "platform": {
+      "php": "8.4.16"
+    },
+    "sort-packages": true
+  },
+  "extra": {
+    "laminas": {
+      "component-auto-installs": [
+        "mezzio/mezzio",
+        "mezzio/mezzio-helpers",
+        "mezzio/mezzio-router",
+        "laminas/laminas-httphandlerrunner",
+        "mezzio/mezzio-fastroute"
+      ]
+    }
+  },
+  "require": {
+    "php": "~8.4.0",
+    "ext-json": "*",
+    "ext-openssl": "*",
+    "ext-pdo": "*",
+    "envms/fluentpdo": "^2.2",
+    "firebase/php-jwt": "^6.0",
+    "laminas/laminas-config-aggregator": "^1.6",
+    "laminas/laminas-diactoros": "^3.8.0",
+    "laminas/laminas-inputfilter": "^2.30",
+    "laminas/laminas-servicemanager": "^3.4",
+    "laminas/laminas-stdlib": "^3.6",
+    "laminas/laminas-validator": "^2.64",
+    "laminas/laminas-component-installer": "^2.6 || ^3.0",
+    "laminas/laminas-development-mode": "^3.3.0",
+    "mezzio/mezzio-tooling": "^2.12",
+    "mezzio/mezzio": "^3",
+    "mezzio/mezzio-cors": "^1.13",
+    "mezzio/mezzio-fastroute": "^3.0.3",
+    "mezzio/mezzio-helpers": "^5.7",
+    "monolog/monolog": "^3.9.0",
+    "ramsey/uuid": "^4.7",
+    "symfony/mailer": "^6.4",
+    "zircote/swagger-php": "^6",
+    "jetbrains/phpstorm-attributes": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Exdrals\\Shared\\": "src/Shared/src",
+      "Exdrals\\Mailing\\": "src/Mailing/src/",
+      "Exdrals\\Token\\": "src/Token/src/"
+    }
+  },
+  "archive": {
+    "exclude": [
+      ".gitignore"
+    ]
+  }
+}
