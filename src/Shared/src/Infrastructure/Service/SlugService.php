@@ -9,6 +9,10 @@ readonly class SlugService
 {
     public function getSlugFromString(string $data): string
     {
-        return str_replace([' ', '_'], ['-'], strtolower($data));
+        $slug = strtolower($data);
+        $slug = str_replace([' ', '_'], '-', $slug);
+        $slug = preg_replace('/[^a-z0-9\-]/', '', $slug);
+        $slug = preg_replace('/-+/', '-', $slug);
+        return trim($slug, '-');
     }
 }
